@@ -11,6 +11,8 @@
   "author": "耶瞳",
   "license": "APACHE 2.0",
   "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.9.10",
+    "@vuepress/plugin-nprogress": "^1.9.10",
     "vuepress": "^1.9.10"
   }
 }
