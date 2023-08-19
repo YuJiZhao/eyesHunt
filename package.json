@@ -1,0 +1,14 @@
+{
+  "name": "eyeshunt",
+  "version": "1.0.0",
+  "description": "耶瞳职库",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "耶瞳",
+  "license": "ISC",
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.66"
+  }
+}
