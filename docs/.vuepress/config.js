@@ -10,16 +10,9 @@ module.exports = {
     port: 9600,
     head,
     plugins,
-    sidebar: {
-        '/experience/': [
-            '',
-            'lesson',
-            'test'
-        ],
-    },
     themeConfig: {
         nav,
-        sidebarDepth: 3,
+        sidebar,
         lastUpdated: 'Last Updated'
     }
 }

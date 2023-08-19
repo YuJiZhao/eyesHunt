@@ -3,7 +3,7 @@ home: true
 heroText: 耶瞳职库
 tagline: 再不学，老夫就要失业了
 actionText: 快去学习 →
-actionLink: /content/stereotype/
+actionLink: /stereotype/
 features:
 - title: 简洁至上
   details: 没有花里胡哨的东西，内容才是最重要的，毕竟长得帅不能当饭吃。
