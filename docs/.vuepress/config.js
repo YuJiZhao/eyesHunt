@@ -1,5 +1,7 @@
 const head = require('./config/head')
-const navbar = require('./config/navbar')
+const nav = require('./config/navbar')
+const sidebar = require('./config/sidebar')
+const plugins = require('./config/plugins')
 
 module.exports = {
     title: '耶瞳职库',
@@ -7,11 +9,17 @@ module.exports = {
     base: '/',
     port: 9600,
     head,
-    plugins: [],
+    plugins,
+    sidebar: {
+        '/experience/': [
+            '',
+            'lesson',
+            'test'
+        ],
+    },
     themeConfig: {
-        nav: navbar,
-        sidebar: {},
-        sidebarDepth: 2,
+        nav,
+        sidebarDepth: 3,
         lastUpdated: 'Last Updated'
     }
 }
