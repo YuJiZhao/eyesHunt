@@ -13,6 +13,7 @@ module.exports = {
     themeConfig: {
         nav,
         sidebar,
+        search: false,
         lastUpdated: 'Last Updated'
     }
 }
