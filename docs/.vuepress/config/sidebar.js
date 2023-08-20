@@ -20,9 +20,6 @@ module.exports = {
     '/project/': [
         ['', '前言'],
     ],
-    '/stereotype/': [
-        ['', '前言'],
-    ],
     '/vitae/': [
         ['', '前言'],
     ],
