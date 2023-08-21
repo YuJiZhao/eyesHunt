@@ -15,6 +15,9 @@ module.exports = {
         ['url-short-link', '短链系统设计'],
         ['red-envelope', '微信红包系统'],
         ['current-limiting', '限流算法'],
+        ['global-unique-id', '全局唯一id'],
+        ['distributed-lock', '分布式锁'],
+        ['distributed-transaction', '分布式事务'],
     ],
     '/experience/': [
         ['', '前言'],
