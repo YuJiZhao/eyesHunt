@@ -5,7 +5,6 @@ module.exports = [
         text: '八股', 
         items: [
             { text: 'Java基础', link: '/stereotype/java/' },
-            { text: 'JVM', link: '/stereotype/jvm/' },
             { text: 'Spring', link: '/stereotype/spring/' },
             { text: 'MySQL', link: '/stereotype/mysql/' },
             { text: 'Redis', link: '/stereotype/redis/' },

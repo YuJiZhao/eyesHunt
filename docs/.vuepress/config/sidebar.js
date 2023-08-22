@@ -1,4 +1,15 @@
 module.exports = {
+    '/vitae/': [
+        ['', '前言'],
+    ],
+    '/stereotype/java/': [
+        ['', '前言'],
+        ['serializable', '序列化问题'],
+        ['collection-framework', '集合框架概览'],
+        ['hashmap-capacity', 'HashMap容量问题'],
+        ['fail-fast-safe', '快速失败与安全失败'],
+        ['cas-aba', 'ABA问题'],
+    ],
     '/algorithm/': [
         ['', '前言'],
     ],
@@ -19,19 +30,16 @@ module.exports = {
         ['distributed-lock', '分布式锁'],
         ['distributed-transaction', '分布式事务'],
     ],
-    '/experience/': [
+    '/project/': [
+        ['', '前言'],
+    ],
+    '/work/': [
         ['', '前言'],
     ],
     '/interview/': [
         ['', '前言'],
     ],
-    '/project/': [
-        ['', '前言'],
-    ],
-    '/vitae/': [
-        ['', '前言'],
-    ],
-    '/work/': [
+    '/experience/': [
         ['', '前言'],
     ],
 }
