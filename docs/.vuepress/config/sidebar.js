@@ -10,6 +10,11 @@ module.exports = {
         ['fail-fast-safe', '快速失败与安全失败'],
         ['cas-aba', 'ABA问题'],
     ],
+    '/stereotype/mysql/': [
+        ['', '前言'],
+        ['slow-sql-troubleshooting.md', '慢SQL排查'],
+        ['mysql-optimize.md', 'MySQL调优'],
+    ],
     '/algorithm/': [
         ['', '前言'],
     ],
