@@ -14,6 +14,7 @@ module.exports = {
         ['', '前言'],
         ['slow-sql-troubleshooting.md', '慢SQL排查'],
         ['mysql-optimize.md', 'MySQL调优'],
+        ['mysql-lock.md', 'MySQL锁机制'],
     ],
     '/algorithm/': [
         ['', '前言'],
@@ -41,7 +42,16 @@ module.exports = {
     '/work/': [
         ['', '前言'],
     ],
-    '/interview/': [
+    '/interview/alibaba/': [
+        ['', '前言'],
+        ['1-interview', '淘天_暑期_一二面'],
+        ['2-interview', '1688_暑期_一面'],
+        ['3-interview', '淘天_社招_二面'],
+        ['4-interview', '淘天_秋招_一面_01'],
+        ['5-interview', '淘天_秋招_一面_02'],
+        ['6-interview', '淘天_秋招_一面_03'],
+    ],
+    '/interview/bytedance/': [
         ['', '前言'],
     ],
     '/experience/': [
