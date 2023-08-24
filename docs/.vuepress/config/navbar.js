@@ -18,14 +18,15 @@ module.exports = [
     { text: '系统设计', link: '/design/' },
     { text: '项目', link: '/project/' },
     { text: '工作', link: '/work/' },
-    { text: '面经',
-      items: [
-        { text: '阿里巴巴', link: '/interview/alibaba/' },
-        { text: '字节跳动', link: '/interview/bytedance/' },
-        { text: '其他', link: '/interview/other/' },
-      ] 
+    { 
+        text: '面经',
+        items: [
+            { text: '阿里巴巴', link: '/interview/alibaba/' },
+            { text: '字节跳动', link: '/interview/bytedance/' },
+            { text: '其他', link: '/interview/other/' },
+        ]
     },
-    { text: '心得', link: '/experience/' },
+    { text: '杂言', link: '/miscellany/' },
     { text: 'Github', link: 'https://github.com/YuJiZhao/eyesHunt' },
     {
         text: '其他',

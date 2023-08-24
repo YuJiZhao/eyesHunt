@@ -41,6 +41,11 @@ module.exports = {
     ],
     '/work/': [
         ['', '前言'],
+        ['high-cpu-usage', 'CPU高占用问题'],
+        ['high-memory-usage', '内存高占用问题'],
+        // ['program-deadlock', '程序死锁问题'],
+        // ['mysql-deadlock', 'MySQL死锁问题'],
+        ['api-optimization', '接口性能优化'],
     ],
     '/interview/alibaba/': [
         ['', '前言'],
@@ -54,7 +59,7 @@ module.exports = {
     '/interview/bytedance/': [
         ['', '前言'],
     ],
-    '/experience/': [
-        ['', '前言'],
+    '/miscellany/': [
+        ['', '关于本站'],
     ],
 }
