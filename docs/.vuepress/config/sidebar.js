@@ -9,6 +9,15 @@ module.exports = {
         ['hashmap-capacity', 'HashMap容量问题'],
         ['fail-fast-safe', '快速失败与安全失败'],
         ['cas-aba', 'ABA问题'],
+        ['volatile-underlying-principle', 'volatile底层原理'],
+        ['aqs', 'AQS问题'],
+        ['reentrantLock-principle', 'ReentrantLock原理'],
+        ['countDownLatch-principle', 'CountDownLatch原理'],
+        // ['semaphore-principle', 'Semaphore原理'],
+        // ['cyclicBarrier-principle', 'CyclicBarrier原理'],
+        // ['atomic', 'Atomic原子类'],
+        // ['completableFuture', 'CompletableFuture问题'],
+        ['threadLocal', 'ThreadLocal问题']
     ],
     '/stereotype/mysql/': [
         ['', '前言'],

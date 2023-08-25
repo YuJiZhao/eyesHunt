@@ -4,7 +4,7 @@ module.exports = [
     { 
         text: '八股', 
         items: [
-            { text: 'Java基础', link: '/stereotype/java/' },
+            { text: 'Java', link: '/stereotype/java/' },
             { text: 'Spring', link: '/stereotype/spring/' },
             { text: 'MySQL', link: '/stereotype/mysql/' },
             { text: 'Redis', link: '/stereotype/redis/' },
@@ -14,7 +14,15 @@ module.exports = [
             { text: 'Linux', link: '/stereotype/linux/' },
         ]
     },
-    { text: '算法', link: '/algorithm/' },
+    { 
+        text: '手撕', 
+        link: '/handTearing/',
+        items: [
+            { text: '面试算法', link: '/handTearing/algorithm-interview/' },
+            { text: '笔试算法', link: '/handTearing/algorithm-written-test/' },
+            { text: '其他', link: '/handTearing/other/' },
+        ]
+    },
     { text: '系统设计', link: '/design/' },
     { text: '项目', link: '/project/' },
     { text: '工作', link: '/work/' },
