@@ -17,7 +17,7 @@ CLH 锁是对自旋锁的一种改进，是一个虚拟的双向队列（虚拟�
 + prev：前驱节点
 + next：后继节点
 
-![CLH](https://javaguide.cn/java/concurrent/aqs.html)
+![CLH](http://hunt-cdn.eyescode.top/content/50661d8f-e68e-8586-e9c4-1b471ea779c4.png)
 
 AQS（AbstractQueuedSynchronizer）的核心原理图：
 
