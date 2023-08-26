@@ -7,6 +7,8 @@ CountDownLatch 是 AQS 共享模式的一种实现，其工作流程如下：
 
 接下来通过阅读源码来深入了解。
 
+# 构造方法
+
 首先是构造方法，创建一个值为 count 的计数器
 
 ```java
@@ -23,6 +25,8 @@ protected final void setState(int newState) {
     state = newState;
 }
 ```
+
+# countDown 方法
 
 接下来是`countDown`方法，该方法会对计数器进行减 1 操作，当计数器递减至 0 时，当前线程会去唤醒阻塞队列里的所有线程：
 
@@ -53,6 +57,8 @@ protected boolean tryReleaseShared(int releases) {
     }
 }
 ```
+
+# await 方法
 
 最后是`await`方法，该方法会阻塞当前线程，将当前线程加入阻塞队列，直到 state = 0：
 
