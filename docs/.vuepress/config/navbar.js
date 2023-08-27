@@ -20,6 +20,7 @@ module.exports = [
         items: [
             { text: '面试算法', link: '/handTearing/algorithm-interview/' },
             { text: '笔试算法', link: '/handTearing/algorithm-written-test/' },
+            { text: '智力题', link: '/handTearing/brain-teaser/' },
             { text: '其他', link: '/handTearing/other/' },
         ]
     },
@@ -30,7 +31,12 @@ module.exports = [
         text: '面经',
         items: [
             { text: '阿里巴巴', link: '/interview/alibaba/' },
+            { text: '腾讯', link: '/interview/tencent/' },
             { text: '字节跳动', link: '/interview/bytedance/' },
+            { text: '百度', link: '/interview/baidu/' },
+            { text: '美团', link: '/interview/meituan/' },
+            { text: '快手', link: '/interview/kuaishou/' },
+            { text: '华为', link: '/interview/huawei/' },
             { text: '其他', link: '/interview/other/' },
         ]
     },
