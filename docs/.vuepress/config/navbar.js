@@ -12,6 +12,7 @@ module.exports = [
             { text: '操作系统', link: '/stereotype/operating-system/' },
             { text: '计算机网络', link: '/stereotype/network/' },
             { text: 'Linux', link: '/stereotype/linux/' },
+            { text: '其他', link: '/stereotype/other/' },
         ]
     },
     { 
