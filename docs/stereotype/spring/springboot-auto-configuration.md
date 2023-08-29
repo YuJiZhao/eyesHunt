@@ -1,0 +1,3 @@
+省流版 Spring 的自动装配原理：SpringBoot 启动的时候会通过`@EnableAutoConfiguration`注解找到`META-INF/spring.factories`配置文件中的所有自动配置类，并对其进行加载，这些自动配置类都是以 AutoConfiguration 结尾来命名的，它实际上就是一个 JavaConfig 形式的 Spring 容器配置类。通过`@Bean`导入到 Spring 容器中，以 Properties 结尾命名的类是和配置文件进行绑定的。它能通过这些以 Properties 结尾命名的类中取得在全局配置文件中配置的属性，我们可以通过修改配置文件对应的属性来修改自动配置的默认值，来完成自定义配置。
+
+提到自动装配的时候，一般会联想到 SpringBoot，实际上 Spring Framework 早就实现了这个功能。Spring 的自动装配机制是指 Spring 容器在启动时，自动将符合条件的 Bean 注入到需要它们的地方，而无需手动配置。这种机制可以大大简化配置工作，提高开发效率。它可以自动配置应用程序的各种组件，包括数据源、Web服务器、安全性、日志记录等。SpringBoot 只是在其基础上，通过 SPI 的方式做了进一步优化。

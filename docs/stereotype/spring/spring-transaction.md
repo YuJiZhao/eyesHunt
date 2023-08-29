@@ -25,6 +25,94 @@
 + 不正确的捕获异常：如果方法内异常在方法内被 try-catch 捕获处理的话，异常就不会向上传递，也不会触发事务
 + 多线程调用问题：如果方法内，启用新线程执行 sql 操作，则不会回滚。Spring 的事务是通过 ThreadLocal 来保证线程安全的，事务和当前线程绑定，多个线程自然会让事务失效
 
+# Spring 事务传播行为
+
+```java
+public enum Propagation {
+
+	/**
+   * required
+   * 
+   * 如果没有事务则开启一个新的事务
+	 * 如果存在一个事务，则加入当前事务
+   * 如果嵌套调用的两个方法都加了事务注解
+   *   1. 如果运行在同一个线程中，则这两个方法融入一个事务中
+   *   2. 如果运行在不同线程中，则会开启新的事务
+	 */
+	REQUIRED(TransactionDefinition.PROPAGATION_REQUIRED),
+
+	/**
+   * supports
+   * 
+	 * 如果当前存在事务，则融入当前事务
+   * 如果当前没有事务，则以非事务形式执行
+	 */
+	SUPPORTS(TransactionDefinition.PROPAGATION_SUPPORTS),
+
+	/**
+   * mandatory
+   * 
+	 * 如果当前存在事务，则融入当前事务
+   * 如果当前不存在事务，则抛出异常
+	 */
+	MANDATORY(TransactionDefinition.PROPAGATION_MANDATORY),
+
+	/**
+   * requires new
+   * 
+	 * 总是开启一个新的事务
+   * 需要使用 JtaTransactionManager 作为事务管理器
+	 */
+	REQUIRES_NEW(TransactionDefinition.PROPAGATION_REQUIRES_NEW),
+
+	/**
+   * not supports
+   * 
+	 * 总是非事务地执行，并挂起任何存在的事务
+   * 需要使用 JtaTransactionManager 作为事务管理器
+	 */
+	NOT_SUPPORTED(TransactionDefinition.PROPAGATION_NOT_SUPPORTED),
+
+	/**
+   * never
+   * 
+	 * 总是非事务地执行，如果存在一个活动事务，则抛出异常
+	 */
+	NEVER(TransactionDefinition.PROPAGATION_NEVER),
+
+	/**
+   * nested
+   * 
+	 * 如果一个活动的事务存在，则运行在一个嵌套的事务中
+   * 如果没有活动事务, 则按 REQUIRED 属性执行
+	 */
+	NESTED(TransactionDefinition.PROPAGATION_NESTED);
+
+
+	private final int value;
+
+
+	Propagation(int value) {
+		this.value = value;
+	}
+
+	public int value() {
+		return this.value;
+	}
+}
+```
+
+PROPAGATION_NESTED 与 PROPAGATION_REQUIRES_NEW 的区别:
++ 使用 PROPAGATION_REQUIRES_NEW 时，内层事务与外层事务是两个独立的事务。一旦内层事务进行了提交后，外层事务不能对其进行回滚。两个事务互不影响
++ 使用 PROPAGATION_NESTED 时，外层事务的回滚可以引起内层事务的回滚。而内层事务的异常并不会导致外层事务的回滚，它是一个真正的嵌套事务
+
 ------
 摘自：
 + [java八股系列——spring事务失效场景](http://space.eyescode.top/blog/details/243)
++ [有哪些事务传播行为？](https://topjavaer.cn/framework/spring.html#%E6%9C%89%E5%93%AA%E4%BA%9B%E4%BA%8B%E5%8A%A1%E4%BC%A0%E6%92%AD%E8%A1%8C%E4%B8%BA)
+
+站长略有修改
+
+推荐：
++ [一个视频教会你spring的事务传播行为](https://www.bilibili.com/video/BV1R8411c7m2)
++ [带你读懂Spring 事务——事务的传播机制](https://zhuanlan.zhihu.com/p/148504094)

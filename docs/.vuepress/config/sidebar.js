@@ -85,6 +85,7 @@ module.exports = {
         ['6-interview', '淘天_秋招_03'],
         ['7-interview', '淘天_秋招_04'],
         ['11-interview', '淘天_秋招_05'],
+        ['16-interview', '淘天_秋招_06'],
         ['3-interview', '淘天_社招_01'],
         ['2-interview', '1688_暑期_01'],
         ['9-interview', '饿了么_秋招_01'],
