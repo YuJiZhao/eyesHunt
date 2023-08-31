@@ -34,7 +34,7 @@ Affect(class-cnt:2 , method-cnt:2) cost in 525 ms.
 ![优化方案](http://hunt-cdn.eyescode.top/content/9d3eb398-c2c3-947f-729a-4b75f51b936a.png)
 
 ------
-摘抄：
+摘自：
 + [如何快速定位接口响应慢问题](https://blog.csdn.net/zj15527620802/article/details/115182528)
 + [用了这18种方案，接口性能提高了100倍！](https://juejin.cn/post/7167153109158854687)
 

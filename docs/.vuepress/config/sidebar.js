@@ -44,7 +44,20 @@ module.exports = {
         ['', '前言'],
         ['tomcat', 'Tomcat问题'],
     ],
-    '/algorithm/': [
+    '/handTearing/algorithm-interview/': [
+        ['', '前言'],
+        ['lru', 'LRU算法'],
+        ['lfu', 'LFU算法'],
+        ['quick-sort', '快速排序算法'],
+        ['heap-sort', '堆排序算法'],
+    ],
+    '/handTearing/algorithm-written-test/': [
+        ['', '前言'],
+    ],
+    '/handTearing/brain-teaser/': [
+        ['', '前言'],
+    ],
+    '/handTearing/other/': [
         ['', '前言'],
     ],
     '/design/': [
