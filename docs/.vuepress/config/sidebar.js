@@ -18,6 +18,7 @@ module.exports = {
         ['cyclicBarrier-principle', 'CyclicBarrier原理'],
         ['atomic', 'Atomic原子类总结'],
         ['threadLocal', 'ThreadLocal问题'],
+        ['java-new-features', 'Java新特性']
     ],
     '/stereotype/spring/': [
         ['', '前言'],
@@ -29,6 +30,7 @@ module.exports = {
         ['spring-transaction', 'Spring 事务问题'],
         ['spring-async', '@Async 注解原理'],
         ['spring-design-patterns', 'Spring 中的设计模式'],
+        ['spring-new-features', 'Spring 新特性'],
         ['springmvc-workflow', 'SpringMVC 工作流程'],
         ['springboot-auto-configuration', 'SpringBoot 自动装配'],
         ['springboot-initiate-process', 'SpringBoot 启动流程'],
