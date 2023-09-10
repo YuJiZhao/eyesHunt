@@ -17,7 +17,6 @@ module.exports = [
     },
     { 
         text: '手撕', 
-        link: '/handTearing/',
         items: [
             { text: '面试算法', link: '/handTearing/algorithm-interview/' },
             { text: '笔试算法', link: '/handTearing/algorithm-written-test/' },

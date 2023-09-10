@@ -2,6 +2,7 @@ module.exports = {
     '/vitae/': [
         ['', '前言'],
     ],
+
     '/stereotype/java/': [
         ['', '前言'],
         ['reflect', 'Java 反射'],
@@ -46,6 +47,7 @@ module.exports = {
         ['', '前言'],
         ['tomcat', 'Tomcat问题'],
     ],
+
     '/handTearing/algorithm-interview/': [
         ['', '前言'],
         ['quick-sort', '快速排序算法'],
@@ -73,6 +75,7 @@ module.exports = {
         ['singleton', '单例模式'],
         ['observer', '观察者模式'],
     ],
+
     '/design/': [
         ['', '前言'],
         ['topK', 'TopK问题'],
@@ -90,9 +93,11 @@ module.exports = {
         ['distributed-lock', '分布式锁'],
         ['distributed-transaction', '分布式事务'],
     ],
+
     '/project/': [
         ['', '前言'],
     ],
+
     '/work/': [
         ['', '前言'],
         ['high-cpu-usage', 'CPU高占用问题'],
@@ -101,6 +106,7 @@ module.exports = {
         ['mysql-deadlock', 'MySQL死锁问题'],
         ['api-optimization', '接口性能优化'],
     ],
+
     '/interview/alibaba/': [
         ['', '前言'],
         ['8-interview', '2023_秋招_控股集团_01'],
@@ -147,6 +153,7 @@ module.exports = {
     '/interview/other/': [
         ['', '前言'],
     ],
+    
     '/miscellany/': [
         ['', '关于本站'],
     ],
