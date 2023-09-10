@@ -48,10 +48,11 @@ module.exports = {
     ],
     '/handTearing/algorithm-interview/': [
         ['', '前言'],
-        ['lru', 'LRU算法'],
-        ['lfu', 'LFU算法'],
         ['quick-sort', '快速排序算法'],
         ['heap-sort', '堆排序算法'],
+        ['lru', 'LRU算法'],
+        ['lfu', 'LFU算法'],
+        ['kmp', 'KMP算法'],
     ],
     '/handTearing/algorithm-written-test/': [
         ['', '前言'],
@@ -59,8 +60,18 @@ module.exports = {
     '/handTearing/brain-teaser/': [
         ['', '前言'],
     ],
-    '/handTearing/other/': [
+    '/handTearing/multi-threading/': [
         ['', '前言'],
+        ['print-in-order', '按序打印'],
+        ['print-foobar-alternately', '交替打印'],
+        ['fizz-buzz-multithreaded', '交替打印字符串'],
+        ['print-zero-even-odd', '打印零和奇偶数'],
+        ['building-h2o', 'H2O生成'],
+    ],
+    '/handTearing/design-patterns/': [
+        ['', '前言'],
+        ['singleton', '单例模式'],
+        ['observer', '观察者模式'],
     ],
     '/design/': [
         ['', '前言'],

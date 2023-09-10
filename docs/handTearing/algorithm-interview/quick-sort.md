@@ -51,9 +51,3 @@ public class QuickSort {
     }
 }
 ```
-
-------
-摘自：
-+ [快速排序算法详解（原理、实现和时间复杂度）](http://data.biancheng.net/view/117.html)
-
-站长略有修改

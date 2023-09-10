@@ -22,7 +22,8 @@ module.exports = [
             { text: '面试算法', link: '/handTearing/algorithm-interview/' },
             { text: '笔试算法', link: '/handTearing/algorithm-written-test/' },
             { text: '智力题', link: '/handTearing/brain-teaser/' },
-            { text: '其他', link: '/handTearing/other/' },
+            { text: '多线程', link: '/handTearing/multi-threading/' },
+            { text: '设计模式', link: '/handTearing/design-patterns/' },
         ]
     },
     { text: '系统设计', link: '/design/' },
