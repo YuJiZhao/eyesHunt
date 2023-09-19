@@ -43,6 +43,10 @@ module.exports = {
         ['mysql-optimize', 'MySQL调优'],
         ['mysql-lock', 'MySQL锁机制'],
     ],
+    '/stereotype/network/': [
+        ['', '前言'],
+        ['sticking-unpacking', '粘包和半包问题'],
+    ],
     '/stereotype/other/': [
         ['', '前言'],
         ['tomcat', 'Tomcat问题'],
