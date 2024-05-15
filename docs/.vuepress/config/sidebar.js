@@ -156,6 +156,7 @@ module.exports = {
     ],
     '/interview/other/': [
         ['', '前言'],
+        ['hr', 'hr面问题汇总'],
     ],
     
     '/miscellany/': [
